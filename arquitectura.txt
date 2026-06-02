@@ -1,0 +1,10 @@
+artelanitas_app/
+│
+├── .env                 # Variables de entorno (API Keys)
+├── requirements.txt     # Dependencias del proyecto
+├── app.py               # Archivo principal de Streamlit (Frontend y enrutamiento)
+├── data/
+│   └── history.json     # Archivo autogenerado para persistencia de datos local
+└── utils/
+    ├── api_handler.py   # Lógica de conexión con Gemini/Cohere
+    └── storage.py       # Lógica de guardado y lectura del JSON

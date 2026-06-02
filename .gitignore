@@ -1,0 +1,14 @@
+# Variables de entorno y secretos
+.env
+
+# Entornos virtuales de Python
+venv/
+env/
+.venv/
+
+# Archivos cacheados de Python
+__pycache__/
+*.pyc
+
+# Base de datos local (evitar subir historiales de prueba)
+data/history.json
