@@ -1,10 +1,31 @@
-artelanitas_app/
+# Artelanitas Global E-commerce AI 🧶🌍
+
+**Proyecto Final - Prompt Engineering para Programadores | Coderhouse (Comisión 95840)**
+
+Un Producto Mínimo Viable (MVP) desarrollado con Python y Streamlit que integra la Inteligencia Artificial de Google Gemini para escalar un negocio local de tejidos artesanales hacia el mercado internacional. 
+
+## 🚀 Descripción del Proyecto
+
+Artelanitas es un negocio de lanería y tejidos presencial. Esta aplicación resuelve el cuello de botella de la digitalización de su catálogo. A través de un formulario simple y la carga de una fotografía, la IA analiza la textura del tejido, traduce la intención de venta, adapta las métricas (talles) y genera una ficha de producto e-commerce completa y optimizada para SEO en el idioma del país de destino.
+
+## ✨ Características Principales
+
+* **Integración Multimodal (Visión + Texto):** Utiliza el modelo `gemini-2.5-flash` mediante la librería `google-genai` para analizar imágenes de prendas junto con parámetros de texto.
+* **Ingeniería de Prompts Avanzada:** Uso de un prompt estructurado con delimitación de roles (Copywriter, Analista SEO), reglas estrictas de identidad de marca (exclusión de enfoques pet-friendly) y salida formateada en Markdown.
+* **Persistencia de Datos Local:** Sistema de almacenamiento CRUD utilizando un archivo `history.json` para guardar, visualizar y eliminar el historial de catálogos generados.
+* **Interfaz Dinámica e Intuitiva:** Desarrollada íntegramente con Streamlit, incluyendo menús de navegación, manejo de estados y componentes desplegables (`expander`).
+
+## 📁 Estructura del Proyecto
+
+```text
+IA_entrega_final_95840_Carabajal_Emmanuel/
 │
-├── .env                 # Variables de entorno (API Keys)
+├── .env                 # Variables de entorno (Ignorado en GitHub por seguridad)
+├── .gitignore           # Archivos excluidos del control de versiones
 ├── requirements.txt     # Dependencias del proyecto
-├── app.py               # Archivo principal de Streamlit (Frontend y enrutamiento)
+├── app.py               # Archivo principal de la aplicación (Frontend Streamlit)
 ├── data/
-│   └── history.json     # Archivo autogenerado para persistencia de datos local
+│   └── history.json     # Base de datos local (Autogenerada)
 └── utils/
-    ├── api_handler.py   # Lógica de conexión con Gemini/Cohere
-    └── storage.py       # Lógica de guardado y lectura del JSON
+    ├── api_handler.py   # Lógica de conexión y procesamiento con la API de Gemini
+    └── storage.py       # Funciones CRUD para la gestión del archivo JSON
